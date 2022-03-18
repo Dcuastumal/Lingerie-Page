@@ -4,7 +4,7 @@
   }
   @font-face{
     font-family: "Flores";
-    src: url(fonts/Lamina.ttf);
+    src: url(Fonts/Lamina.ttf);
   }
   * {
     box-sizing: border-box;
