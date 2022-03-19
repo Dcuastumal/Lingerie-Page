@@ -3,8 +3,12 @@
     src: url(fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
   }
   @font-face{
-    font-family: "Flores";
-    src: url(Fonts/Lamina.ttf);
+    font-family: "Gabriela";
+    src: url(Fonts/Babe.ttf);
+  }
+  @font-face{
+    font-family: "Offers";
+    src: url(Fonts/ADELIA.otf);
   }
   * {
     box-sizing: border-box;
@@ -24,8 +28,15 @@
     text-align: center;
       font-size: 3em;
       margin: 10px 0;
-      color:black;
-      font-family: "Flores";
+      font-family: "Gabriela";
+      cursor: pointer;
+      font-weight: bold;
+
+      background: #ccc;
+      background: linear-gradient(90deg, #7cdfd6, rgb(235, 108, 127));
+      
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
   }
   .main-header__container{
     display: flex;
@@ -37,7 +48,9 @@
     padding: 0 10px;
   }
   .main-header__txt{
-    font-weight: bold;
+    font-family: "Offers";
+    font-size: 50px;
+    color: rgb(180, 89, 89);
   }
   /* Estilos del Menu */
   .main-nav {
@@ -96,10 +109,13 @@
     transition: 0.2s;
     border-radius: 10px;
     font-weight: bold;
+    
+    
   }
   .main-header__btn:hover{
-    background:lightpink;
+    background: lightpink;
     box-shadow: 0 0 10px lightpink, 0 0 20px lightpink, 10 10 40px lightpink;
+    color: black;
     transition-delay: 0.35s;
   }
   .main-header__btn span{
@@ -153,11 +169,25 @@
     transition: 1s;
     transition-delay: 0.75;
   }
-  .main-header__input{
+  input.main-header__input{
     display: block;
-    padding: 10px;
-    width: 50%;
+    padding: 6px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 15px;
+    color: #444;
+    border: 3px solid lightpink;
+
+    width: 100%;
+    transition: all .5s;
   }
+  .main-header__input:hover {
+  
+    background-color: #fff;
+      border-color: #3d6a6d;
+    box-shadow: 0 0 5px #6dcff680;
+  }
+  
   .main {
     padding: 0 20px;
   }
@@ -265,6 +295,7 @@
     padding: 20px;
     text-align: center;
     position: relative;
+    cursor: pointer;
   }
   .product:before {
     content: "NEW";
@@ -441,7 +472,7 @@
   }
   
   /*Estilos para tablet*/
-  @media screen and (min-width:768px) {
+  @media screen and (min-width:720px) {
     .slider{
       height: 400px;
     }
