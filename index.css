@@ -36,7 +36,8 @@
       background: linear-gradient(90deg, #7cdfd6, rgb(235, 108, 127));
       
       -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
+
+      -webkit-background-clip: text; 
   }
   .main-header__container{
     display: flex;
