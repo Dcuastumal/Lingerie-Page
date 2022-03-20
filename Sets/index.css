@@ -394,6 +394,9 @@ input.main-header__input{
   .icon-menu {
     display: none;
   }
+  .cart-media {
+    display: none;
+  }
   .main-header .container--flex{
     display: flex;
     align-items: center;
@@ -491,6 +494,7 @@ input.main-header__input{
     height: 500px;
     font-size: 1.5em;
   }
+  
 }
 
 @media screen and (min-width:1600px) { 
