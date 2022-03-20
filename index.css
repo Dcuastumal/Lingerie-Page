@@ -36,7 +36,6 @@
       background: linear-gradient(90deg, #7cdfd6, rgb(235, 108, 127));
       
       -webkit-text-fill-color: transparent;
-
       -webkit-background-clip: text; 
   }
   .main-header__container{
@@ -51,7 +50,7 @@
   .main-header__txt{
     font-family: "Offers";
     font-size: 50px;
-    color: rgb(180, 89, 89);
+    color: rgb(245, 182, 182);
   }
   /* Estilos del Menu */
   .main-nav {
@@ -473,7 +472,7 @@
   }
   
   /*Estilos para tablet*/
-  @media screen and (min-width:720px) {
+  @media screen and (max-width:720px) {
     .slider{
       height: 400px;
     }
@@ -484,6 +483,12 @@
       margin: 50px 0;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+    }
+    .main-header__txt{
+      font-size: 30px ;
+      margin-left: 50px;
+      margin-top: 18px;
+      
     }
   }
   /*Estilos para web*/
