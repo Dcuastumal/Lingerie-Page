@@ -307,7 +307,7 @@ input.main-header__input{
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
-  padding: 135px 0px;
+  padding: 125px 0px;
 
   background-color: rgb(50, 50, 50);
   background-blend-mode: soft-light;
@@ -371,9 +371,8 @@ input.main-header__input{
   .main-header__txt{
     font-size: 30px ;
     margin-left: 50px;
-    margin-top: 5px;
+    margin-top: 18px;
   }
-
 }
 /*Estilos para web*/
 

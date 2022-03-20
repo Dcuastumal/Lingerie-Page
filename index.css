@@ -482,14 +482,17 @@
     .container-tips{
       margin: 50px 0;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(1.9, 1fr);
     }
+    .tip{
+      padding: 1px;
+      }
     .main-header__txt{
       font-size: 30px ;
       margin-left: 50px;
       margin-top: 18px;
-      
     }
+  
   }
   /*Estilos para web*/
   
