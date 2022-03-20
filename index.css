@@ -21,6 +21,7 @@
     display: block;
     width: 100%;
   }
+  
   .main-header {
     padding: 0 20px;
   }
@@ -92,12 +93,14 @@
   
   .icon-menu{
     font-size: 1.5em;
-    border: 1px solid #454546; 
+    border: 1px solid white; 
     display: block;
-    padding: 10px 20px;
+    padding: 8px 20px;
     cursor: pointer;
     margin-left: auto;
+    color: rgb(49, 46, 46);
   }
+  
   .main-header__btn{
     position: relative;
     display: inline-block;
@@ -487,12 +490,36 @@
     .tip{
       padding: 1px;
       }
-    .main-header__txt{
-      font-size: 30px ;
-      margin-left: 50px;
-      margin-top: 18px;
-    }
-  
+      .main-header__txt{
+        display: none;
+      }
+      .main-header__btn{
+        position: relative;
+        bottom: 85px;
+        right: 1px;
+        color: #555;
+        display: none;
+      }
+      .main-header__link {
+        display: none;
+      }
+      .main-header__input {
+        position: relative;
+        right: 20px;
+        top: 10px;
+       
+      }
+      .main-header__title { 
+        position: relative;
+        left: 90px;
+        font-size: 40px;
+      }
+      .cart-media {
+        position: relative;
+        bottom: 70px;
+        height: 50px;
+        width: 50px;
+      }
   }
   /*Estilos para web*/
   
@@ -502,6 +529,9 @@
       margin: auto;
     }
     .icon-menu {
+      display: none;
+    }
+    .cart-media {
       display: none;
     }
     .main-header .container--flex{
@@ -600,6 +630,9 @@
     .slider{
       height: 500px;
       font-size: 1.5em;
+    }
+    .cart-media {
+      display: none;
     }
   }
   
