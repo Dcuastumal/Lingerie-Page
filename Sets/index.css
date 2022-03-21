@@ -289,13 +289,15 @@ input.main-header__input{
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
-  padding: 125px 0px;
-
+  padding: 200px 0px;
+ 
   background-color: rgb(50, 50, 50);
   background-blend-mode: soft-light;
 }
 .text-image{
   text-align: center !important;
+  position: relative;
+  width: 100%;
 }
 .breadcrumb_collection .text-image .Sets .Shop_Text{
   font-size: 70px;
@@ -339,9 +341,12 @@ input.main-header__input{
 
 /*Estilos para tablet*/
 @media screen and (max-width:720px) {
-  .slider{
-    height: 400px;
-  }
+  
+.breadcrumb_collection .text-image{
+  height: 350px;
+  padding: 95px 0;
+  
+}
   .editor__item{
     height: 250px;
   }
