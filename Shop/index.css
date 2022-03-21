@@ -1,6 +1,6 @@
 @font-face{
   font-family: "Inconsolata";
-  src: url(../fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
+  src: url(../Fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
 }
 @font-face{
   font-family: "Gabriela";
@@ -50,8 +50,9 @@ img {
 .main-header__txt{
   font-family: "Offers";
   font-size: 50px;
-  color: rgb(180, 89, 89);
+  color: rgb(245, 182, 182);
 }
+
 /* Estilos del Menu */
 .main-nav {
   opacity: 0;
@@ -92,11 +93,12 @@ img {
 
 .icon-menu{
   font-size: 1.5em;
-  border: 1px solid #454546; 
+  border: 1px solid white; 
   display: block;
   padding: 10px 20px;
   cursor: pointer;
   margin-left: auto;
+  color: rgb(49, 46, 46); 
 }
 .main-header__btn{
   position: relative;
@@ -192,6 +194,53 @@ input.main-header__input{
   padding: 0 20px;
 }
 
+/* Contenedor de Productos */
+
+.container-products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+.product {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.product:before {
+  content: "SET";
+  background: lightpink;
+  padding: 10px;
+  width: 60px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  transform: rotate(-90deg);
+  color: black;
+  font-weight: bold;
+}
+
+.product__img{
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+.product__title{
+  text-align: center;
+}
+.product__price {
+  color:gray;
+  font-weight: bold;
+}
+.product__icon {
+  display: block;
+  margin-top: 10px;
+}
+.product:hover .product__icon {
+  color:palevioletred;
+}
+
 /* ESTILOS DE PRODUCTOS */
 
 .main-footer{
@@ -223,18 +272,73 @@ input.main-header__input{
 .copy {
   color: #555;
 }
+
 /* Estilos Segunda Pagina */
-.Shop{
-  align-items: center;
-  margin: 20px 0;
-  text-align: center;
-    font-size: 3em;
-    margin: 10px 0;
-    color:black;
+
+.breadcrumb_collection {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 35%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Inconsolata";
+  
 }
 
+.breadcrumb_collection .text-image{
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 125px 0px;
+
+  background-color: rgb(50, 50, 50);
+  background-blend-mode: soft-light;
+}
+.text-image{
+  text-align: center !important;
+}
+.breadcrumb_collection .text-image .Sets .Shop_Text{
+  font-size: 70px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  position: relative;
+  line-height: 1.2;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.wrap-bread-crumb .bread-crumb{
+  padding: 0px 0px 30px;
+}
+.wrap-bread-crumb .text-image .bread-crumb a{
+  text-transform: uppercase;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  text-decoration: none;
+  background-color: transparent;
+}
+.wrap-bread-crumb .text-image .bread-crumb a i{
+  padding: 0px 10px;
+  display: inline-block;
+  font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.breadcrumb_collection .text-image .bread-crumb strong{
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
 /*Estilos para tablet*/
-@media screen and (min-width:768px) {
+@media screen and (max-width:720px) {
   .slider{
     height: 400px;
   }
@@ -244,9 +348,42 @@ input.main-header__input{
   .container-tips{
     margin: 50px 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1.9, 1fr);
   }
+  .tip{
+    padding: 1px;
+    }
+    .main-header__txt{
+      display: none;
+    }
+    .main-header__btn{
+      position: relative;
+      bottom: 85px;
+      right: 1px;
+      color: #555;
+      display: none;
+    }
+    .main-header__link {
+      display: none;
+    }
+    .main-header__input {
+      position: relative;
+      right: 20px;
+      top: 10px;
+    }
+    .main-header__title { 
+      position: relative;
+      left: 90px;
+      font-size: 40px;
+    }
+    .cart-media {
+      position: relative;
+      bottom: 70px;
+      height: 50px;
+      width: 50px;
+    }
 }
+
 /*Estilos para web*/
 
 @media screen and (min-width:1024px) { 
@@ -255,6 +392,9 @@ input.main-header__input{
     margin: auto;
   }
   .icon-menu {
+    display: none;
+  }
+  .cart-media {
     display: none;
   }
   .main-header .container--flex{
@@ -354,6 +494,7 @@ input.main-header__input{
     height: 500px;
     font-size: 1.5em;
   }
+  
 }
 
 @media screen and (min-width:1600px) { 
