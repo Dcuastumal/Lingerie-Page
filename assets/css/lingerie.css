@@ -1,14 +1,14 @@
 @font-face{
   font-family: "Inconsolata";
-  src: url(../Fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
+  src: url(../fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
 }
 @font-face{
   font-family: "Gabriela";
-  src: url(../Fonts/Babe.ttf);
+  src: url(../fonts/Babe.ttf);
 }
 @font-face{
   font-family: "Offers";
-  src: url(../Fonts/ADELIA.otf);
+  src: url(../fonts/ADELIA.otf);
 }
 * {
   box-sizing: border-box;
@@ -286,14 +286,16 @@ input.main-header__input{
 }
 
 .breadcrumb_collection .text-image{
-  background-size: 100%; 
+  background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   padding: 200px 0px;
-  text-align: center;
 
   background-color: rgb(50, 50, 50);
   background-blend-mode: soft-light;
+}
+.text-image{
+  text-align: center !important;
 }
 .breadcrumb_collection .text-image .Sets .Shop_Text{
   font-size: 70px;
@@ -337,12 +339,11 @@ input.main-header__input{
 
 /*Estilos para tablet*/
 @media screen and (max-width:720px) {
-  
-.breadcrumb_collection .text-image{
-  height: 300px;
-  background-size: 100% 100%;
-  padding: 80px 0;
-}
+  .breadcrumb_collection .text-image{
+    height: 300px;
+    background-size: 100% 100%;
+    padding: 80px 0;
+  }
   .editor__item{
     height: 250px;
   }
@@ -383,8 +384,7 @@ input.main-header__input{
       height: 50px;
       width: 50px;
     }
-}
-
+  }
 /*Estilos para web*/
 
 @media screen and (min-width:1024px) { 
