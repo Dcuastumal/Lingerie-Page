@@ -4,11 +4,11 @@
 }
 @font-face{
   font-family: "Gabriela";
-  src: url(../Fonts/Babe.ttf);
+  src: url(../fonts/Babe.ttf);
 }
 @font-face{
   font-family: "Offers";
-  src: url(../Fonts/ADELIA.otf);
+  src: url(../fonts/ADELIA.otf);
 }
 * {
   box-sizing: border-box;
