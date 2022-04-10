@@ -1,15 +1,16 @@
 @font-face{
     font-family: "Inconsolata";
-    src: url(Fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
+    src: url(../fonts/Inconsolata-VariableFont_wdth\,wght.ttf);
   }
   @font-face{
     font-family: "Gabriela";
-    src: url(Fonts/Babe.ttf);
+    src: url(../fonts/Babe.ttf);
   }
   @font-face{
     font-family: "Offers";
-    src: url(Fonts/ADELIA.otf);
+    src: url(../fonts/ADELIA.otf);
   }
+
   * {
     box-sizing: border-box;
   }
@@ -27,17 +28,17 @@
   }
   .main-header__title{
     text-align: center;
-      font-size: 3em;
-      margin: 10px 0;
-      font-family: "Gabriela";
-      cursor: pointer;
-      font-weight: bold;
+    font-size: 3em;
+    margin: 10px 0;
+    font-family: "Gabriela";
+    cursor: pointer;
+    font-weight: bold;
 
-      background: #ccc;
-      background: linear-gradient(90deg, #7cdfd6, rgb(235, 108, 127));
+    background: #ccc;
+    background: linear-gradient(90deg, #7cdfd6, rgb(235, 108, 127));
       
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; 
   }
   .main-header__container{
     display: flex;
